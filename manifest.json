@@ -1,0 +1,10 @@
+{
+	"id": "local-llm-obsidian-client",
+	"name": "Obsidian integration for local-llm-api-server",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Obsidian integration for local-llm-api-server (A gateway for Chat with RTX)",
+	"author": "Kurt Heiden",
+	"authorUrl": "https://kheiden.com",
+	"isDesktopOnly": false
+}
