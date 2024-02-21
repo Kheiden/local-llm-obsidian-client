@@ -1,10 +1,11 @@
 # Local LLM Obsidian Client
 
 
-## Installation
+## Installation (BRAT)
 
+The fastest way to install the plugin is using the [BRAT](https://github.com/TfTHacker/obsidian42-brat/blob/main/README.md) plugin.
 
-
+## Manual Installation
 Copy the main.js, styles.css, and manifest.json files to your vault's `.obsidian/plugins/obsidian-gemini` folder.
 
 
