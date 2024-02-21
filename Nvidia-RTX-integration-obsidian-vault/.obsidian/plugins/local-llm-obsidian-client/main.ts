@@ -84,10 +84,7 @@ export default class MyPlugin extends Plugin {
 						};
 						try {
 							const response = await axios.post(gateway_url, data);
-							editor.replaceSelection(
-								editor.getSelection() + '\n\n' +
-								'Index constructed from directory:' + '\n' + 
-								vaultDirectory)
+							new Notice('Index construction complete.');
 						} catch (error) {
 							new Notice(error);
 						}
