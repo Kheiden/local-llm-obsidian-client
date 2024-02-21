@@ -6,36 +6,11 @@ When you're ready, delete this note and make the vault your own.
 
 *What do you want to know?*
 
-I
+What data do you have access to?
 
-I
+Tell me about the data
 
-I
+Based on the context information provided, it appears that you have access to a vault in Obsidian. The vault is related to Nvidia RTX integration and has a welcome message. It also includes a prompt for you to make a note, create a link, or try the Importer. However, it is not clear what specific data you have access to within the vault.<br>Reference files:<br><a href="file:////C:\Users\kurtw\OneDrive\Documents\local-llm-obsidian-client\Nvidia-RTX-integration-obsidian-vault\Welcome.md">Welcome.md</a>
 
-I
-
-I
-
-I
-
-I
-
-undefined
-
-[object Object]
-
-
-
-
-
-
-
-
-
-[object Object]
-
-[object Object]
-
-[object Promise]
-
-[object Object]
+Index constructed from directory:
+C:\Users\kurtw\OneDrive\Documents\local-llm-obsidian-client\Nvidia-RTX-integration-obsidian-vault
