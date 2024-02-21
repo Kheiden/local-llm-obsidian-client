@@ -1,15 +1,13 @@
-# Local LLM Obsidian Client
+# Gemini integration for Obsidian
 
 
 ## Installation
-
-
 
 Copy the main.js, styles.css, and manifest.json files to your vault's `.obsidian/plugins/obsidian-gemini` folder.
 
 
 ## Development
-- Clone repo into the `.obsidian/plugins/local-llm-obsidian-client` folder.
+- Clone repo into the `.obsidian/plugins/obsidian-gemini` folder.
 - Install NodeJS, then run `npm i` in the command line under your repo folder.
 - Run `npm install axios`
 - Run `npm run dev` to compile your plugin from `main.ts` to `main.js`.
