@@ -54,19 +54,6 @@ export default class MyPlugin extends Plugin {
 							const response = await axios.post(gateway_url, data);
 							editor.replaceSelection(
 								editor.getSelection() + '\n\n' + response.data.data)
-							// editor.replaceRange(
-							// 	response.data,
-							// 	editor.getCursor())
-							response.data.iterator.on('data', (chunk: string) => {
-								// logic to process stream data
-								editor.replaceRange(
-									chunk,
-									editor.getCursor())
-							});
-						
-							response.data.iterator.on('end', () => {
-								// logic for stream complete
-							});
 						} catch (error) {
 							new Notice(error);
 						}
@@ -74,6 +61,40 @@ export default class MyPlugin extends Plugin {
 				}
 				const gatewayAPI = new GatewayAPI();
 				gatewayAPI.generateContent();
+			}
+		});
+
+		this.addCommand({
+			id: 'construct-index',
+			name: 'Construct Index',
+			editorCallback: (editor: Editor, view: MarkdownView) => {
+				console.log(editor.getSelection());
+				const gateway_url = `${this.settings.localLLMHost}/api/predict`;
+				const vaultDirectory =`${this.settings.vaultDirectory}`;
+				class GatewayAPI{
+					async constructIndex() {
+						const data = {
+							data: [
+										"", // query
+										"", // chat_history
+										"0", // session_id
+										vaultDirectory, //data_dir
+										true //refresh_index
+							]
+						};
+						try {
+							const response = await axios.post(gateway_url, data);
+							editor.replaceSelection(
+								editor.getSelection() + '\n\n' +
+								'Index constructed from directory:' + '\n' + 
+								vaultDirectory)
+						} catch (error) {
+							new Notice(error);
+						}
+					}
+				}
+				const gatewayAPI = new GatewayAPI();
+				gatewayAPI.constructIndex();
 			}
 		});
 
