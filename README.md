@@ -1,13 +1,16 @@
-# Gemini integration for Obsidian
+# Local LLM Obsidian Client
 
 
-## Installation
+## Installation (BRAT)
 
+The fastest way to install the plugin is using the [BRAT](https://github.com/TfTHacker/obsidian42-brat/blob/main/README.md) plugin.
+
+## Manual Installation
 Copy the main.js, styles.css, and manifest.json files to your vault's `.obsidian/plugins/obsidian-gemini` folder.
 
 
 ## Development
-- Clone repo into the `.obsidian/plugins/obsidian-gemini` folder.
+- Clone repo into the `.obsidian/plugins/local-llm-obsidian-client` folder.
 - Install NodeJS, then run `npm i` in the command line under your repo folder.
 - Run `npm install axios`
 - Run `npm run dev` to compile your plugin from `main.ts` to `main.js`.
